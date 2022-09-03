@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BundleResultActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil BMI"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:background="@drawable/et_background"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/tvMetode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bundle"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:padding="15dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TableLayout
+        android:id="@+id/layoutForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tvTitleUmur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Umur : "
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/etUmurRead"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:enabled="false"
+                 />
+
+            <TextView
+                android:id="@+id/tvKetUmur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tahun"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tvTitleTinggi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tinggi Badan : "
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/etTinggiRead"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:enabled="false"/>
+
+            <TextView
+                android:id="@+id/tvKetTinggi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cm"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tvTitleBerat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berat Badan : "
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/etBeratRead"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:enabled="false"/>
+
+            <TextView
+                android:id="@+id/tvKetBerat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kg"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tvTitleBmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bmi Anda : "
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/etBmiRead"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:enabled="false"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tvTitleKategori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kategori Anda : "
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                />
+
+            <EditText
+                android:id="@+id/etKategoriRead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:enabled="false"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
